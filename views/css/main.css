@@ -1,0 +1,286 @@
+/*-----------------
+All Global
+ ------------------*/
+@font-face {
+    font-family: 'DroidArabicKufiRegular';
+    src: url("fonts/DroidKufi-Regular.ttf");
+}
+* {
+    box-sizing: border-box;
+}
+
+.red {
+    color: #FF6464;
+}
+
+.green {
+    color: #1DCD9F;
+}
+
+.blue {
+    color: #005792;
+    font-weight: bold;
+}
+
+.icon-size {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+.under-line {
+    text-decoration: underline;
+}
+
+.non-displayed {
+    display: none;
+}
+
+.display-section {
+    border-left: 1px solid #005792;
+}
+
+.approved {
+    color: #1DCD9F;
+}
+
+.not-approved {
+    color: #FF6464;
+}
+
+.waiting {
+    color: #005792;
+}
+
+/*-----------------
+The nav-bar
+ ------------------*/
+#top-nav {
+    background-color: #283149;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    box-shadow: #343a40 0px 0px 6px 0px;
+    text-align: right;
+    width: 100%;
+    height: 55px;
+    padding-top: 10px;
+    font-family: 'DroidArabicKufiRegular';
+}
+
+#top-right {
+    float: right;
+    margin-right: 15px;
+}
+
+#top-left {
+    float: left;
+    margin-left: 15px;
+}
+
+.top-text {
+    color: #F2F2F2;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline;
+}
+
+.top-icons {
+    color: #F2F2F2;
+    font-size: 18px;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+ .top-icons:hover {
+     color: #1DCD9F;
+     text-decoration: none;
+     cursor: pointer;
+}
+
+
+/*-----------------
+The content
+ ------------------*/
+#wrapper {
+    margin-top: 70px;
+}
+#content {
+    padding: 20px;
+    text-align: right;
+    box-shadow: #343a40 0px 0px 6px 0px;
+    font-family: 'DroidArabicKufiRegular';
+}
+
+
+/*-----------------
+The side-bar
+ ------------------*/
+#sidebar {
+    padding: 0px;
+    position: fixed;
+    right: 0px;
+    top: 55px;
+    text-align: right;
+    font-family: 'DroidArabicKufiRegular';
+    box-shadow: #343a40 0px 0px 6px 0px;
+    background-color: #283149;
+}
+
+
+#sidebar li.hover-red a:hover {
+    color: #FF6464;
+}
+
+#sidebar li.hover-red a:focus {
+    color: #FF6464;
+}
+
+#sidebar li.hover-blue a:hover {
+    color: #005792;
+}
+
+#sidebar li.hover-blue a:focus {
+    color: #005792;
+}
+
+.menu {
+    width: 100%;
+}
+
+#sidebar li {
+    display: block;
+    background-color: #F2F2F2;
+    list-style: none;
+    height: 50px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    margin-bottom: 1px;
+}
+
+#sidebar li a {
+    color: #4C6F7B;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#sidebar li a:hover {
+    text-decoration: none;
+}
+
+.text {
+    display: block;
+    margin-right: 30px;
+}
+
+#sidebar li.child {
+    margin-bottom: 0px;
+    background-color: #E4EDDB;
+    padding-top: 9px;
+}
+
+#sidebar li.child a{
+    color: #FF6464;
+    font-weight: normal;
+}
+
+
+#sidebar li.home {
+    background-color: hsla(164, 94%, 46%, 1);
+    padding-top: 12px;
+}
+
+#sidebar li.logout:hover, #sidebar li.logout a:hover {
+    color: white;
+    background-color: #FF6464;
+}
+
+/*#sidebar li.info:hover, #sidebar li.info a:hover{
+    color: white;
+    background-color: #005792;
+}*/
+
+#sidebar li.home a {
+    color: #F2F2F2;
+}
+
+#sidebar li.parent a:focus{
+    color: #005792;
+    font-weight: bolder;
+}
+
+#sidebar li.parent a:hover{
+    color: #005792;
+}
+
+.my-angle {
+    float: left;
+    margin-left: 15px;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+/*-----------------
+The login-nav
+ ------------------*/
+
+#login-nav {
+    width: 100%;
+    height: 60px;
+    background-color: #283149;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    box-shadow: #343a40 0px 0px 6px 0px;
+    font-family: 'DroidArabicKufiRegular';
+    padding: 0px;
+}
+
+#top-nav-text {
+    display: block;
+    color: #F2F2F2;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+/*-----------------
+The login-content
+ ------------------*/
+#login-wrapper {
+    margin-top: 100px;
+    font-family: 'DroidArabicKufiRegular';
+}
+/*-------------
+the design of flash message
+---------------*/
+
+#flash-wrapper {
+    margin-top: 100px;
+}
+
+#flash_message {
+    width: 550px;
+    font-family: 'DroidArabicKufiRegular';
+}
+
+.flash-header {
+    font-size: medium;
+}
+
+.report-container{
+    font-family: Arial;
+}
+
+#report-content{
+    padding: 20px;
+    text-align: right;
+    font-family: 'DroidArabicKufiRegular';
+    box-shadow: #343a40 0px 0px 6px 0px;
+    width: 800px;
+
+}
